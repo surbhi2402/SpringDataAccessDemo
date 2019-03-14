@@ -10,7 +10,13 @@ http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
         <property name="password" value="igdefault" />
     </bean>
 
-    <bean id="userDAO" class="com.ttn.UserDAO">
+    <!--Exercise 1-->
+    <!--<bean id="userDAO" class="com.ttn.UserDAO">
+        <property name="dataSource" ref="dataSource" />
+    </bean>-->
+
+    <!--JdbcTemplateExample-->
+    <bean id="jdbcTemplateExample" class="com.ttn.JdbcTemplateExample">
         <property name="dataSource" ref="dataSource" />
     </bean>
 
